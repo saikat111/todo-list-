@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
  import Todo from './components/Todo.js'; 
+ import AddTodo from './components/AddTodo'; 
  import React, { useState } from 'react';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
    <>
   
         <Header></Header>
+        <AddTodo></AddTodo>
        <Todo tods ={tods} onDelete={onDelete} />
         <Footer></Footer>
         </>
